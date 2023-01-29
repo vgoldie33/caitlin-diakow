@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800&family=Rubik+Vinyl&display=swap');
+
+
+
+
+body {
+  background: #cc8fa6;
+  padding: 3rem;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+/* makes all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p:last-of-type {
+  margin-bottom: 2em;
+}
+
+.first-section {
+  border: 4px solid black;
+  padding: 3rem;
+}
+
+
+strong {
+  font-weight: 100;
+  color: lightblue;
+}
+
+.button {
+  width: 20em;
+  width: 10em;
+  border: 1px solid red;
+  padding: 1em;
+  border-radius: 1em;
+  background: white;
+}
+
+
+
+.resume-header {
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.job-objective {
+  font-size: 2.25em;
+  width: 80%; text-align: center;
+  font-weight: 100;
+
+
+}
+
+.resume-details {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-experience {
+
+}
+
+.education-training {
+ 
+}
+
+.volunteer-experience {
+ 
+}
+
+.awards-recognitions {
+
+}
+
+
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

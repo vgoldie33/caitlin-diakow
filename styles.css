@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800&family=Rubik+Vinyl&display=swap');
 
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
 
+*,
+* :before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   background: #cc8fa6;
@@ -25,7 +34,7 @@ p:last-of-type {
 }
 
 
-strong {
+.strong {
   font-weight: 100;
   color: lightblue;
 }
@@ -33,13 +42,17 @@ strong {
 .button {
   width: 20em;
   width: 10em;
-  border: 1px solid red;
+  border: 1px solid blueviolet;
   padding: 1em;
   border-radius: 1em;
   background: white;
 }
 
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
 .resume-header {
 
@@ -49,41 +62,91 @@ strong {
   align-items: center;
   flex-direction: column;
 }
-.job-objective {
-  font-size: 2.25em;
-  width: 80%; text-align: center;
-  font-weight: 100;
-
-
-}
-
-.resume-details {
- 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.work-experience {
-
-}
-
-.education-training {
- 
-}
-
-.volunteer-experience {
- 
-}
-
-.awards-recognitions {
-
-}
-
 
 .logo {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.job-objective-header {
+  font-size: 1.7em;
+  width: 80%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.job-objective {
+  font-size: 1.2em;
+  width: 90%;
+  text-align: center;
+  font-weight: 100;
+}
+
+.resume {
+  justify-content: center;
+  width: 92%;
+  height: 135em;
+  align-items: flex-end;
+}
+
+.resume-details {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 5em;
+  color: #3b4144;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: center;
+  column-gap: 6em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.work-experience {
+  order: 1;
+}
+
+.education-training {
+  order: 3;
+}
+
+.volunteer-experience {
+  order: 2;
+}
+
+.awards-recognitions {
+  order: 4;
+}
+
+
+.sub-heading {
+  line-height: 2.5em;
+}
+
+.place,
+.date,
+.title {
+  line-height: 0.5em;
+}
+
+
+
+.description {
+  line-height: 2em;
+}
+
+.link {
+  color: #35845d;
+}
+
+/* desktop styles */
+@media (min-width: 1024px) {
+  .resume-details {
+    width: 100%;
+  }
 }

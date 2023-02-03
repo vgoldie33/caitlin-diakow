@@ -1,3 +1,4 @@
+@import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800&family=Rubik+Vinyl&display=swap');
 
 
@@ -55,7 +56,6 @@ p:last-of-type {
 }
 
 .resume-header {
-
   text-align: center;
   display: flex;
   justify-content: center;
@@ -85,10 +85,11 @@ p:last-of-type {
 }
 
 .resume {
-  justify-content: center;
+  /* justify-content: center; */
   width: 92%;
-  height: 135em;
-  align-items: flex-end;
+border: 5px solid hotpink;
+  /* align-items: flex-end; */
+  margin: 0 auto;
 }
 
 .resume-details {
@@ -97,31 +98,22 @@ p:last-of-type {
   padding-top: 5em;
   color: #3b4144;
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  /* justify-content: flex-start;
   align-items: flex-start;
-  align-self: center;
-  column-gap: 6em;
+  align-self: center; */
+  /* column-gap: 6em; */
   width: 100%;
   margin: 0 auto;
+  border: 2px solid yellow;
 }
 
-.work-experience {
-  order: 1;
-}
-
-.education-training {
-  order: 3;
-}
-
-.volunteer-experience {
-  order: 2;
-}
-
-.awards-recognitions {
-  order: 4;
-}
+.work-experience, .education-training, .volunteer-experience, .awards-recognitions {
+  width: 50%;
+      background: white; 
+       border: 1px solid wheat;
+    }
 
 
 .sub-heading {
@@ -131,7 +123,7 @@ p:last-of-type {
 .place,
 .date,
 .title {
-  line-height: 0.5em;
+  line-height: 1em;
 }
 
 
@@ -146,6 +138,28 @@ p:last-of-type {
 
 /* desktop styles */
 @media (min-width: 1024px) {
+
+
+
+
+/* 
+  .work-experience {
+    order: 1;
+  }
+  
+  .education-training {
+    order: 3;
+  }
+  
+  .volunteer-experience {
+    order: 2;
+  }
+  
+  .awards-recognitions {
+    order: 4;
+  } */
+
+
   .resume-details {
     width: 100%;
   }

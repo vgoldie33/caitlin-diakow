@@ -1,4 +1,4 @@
-@import url('reset.css');
+/* @import url('reset.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800&family=Rubik+Vinyl&display=swap');
 
 
@@ -35,18 +35,18 @@ p:last-of-type {
 }
 
 
-.strong {
-  font-weight: 100;
-  color: lightblue;
+/* .strong { */
+font-weight: 100;
+color: lightblue;
 }
 
-.button {
-  width: 20em;
-  width: 10em;
-  border: 1px solid blueviolet;
-  padding: 1em;
-  border-radius: 1em;
-  background: white;
+/* .button { */
+width: 20em;
+width: 10em;
+border: 1px solid blueviolet;
+padding: 1em;
+border-radius: 1em;
+background: white;
 }
 
 
@@ -85,10 +85,8 @@ p:last-of-type {
 }
 
 .resume {
-  /* justify-content: center; */
-  width: 92%;
-border: 5px solid hotpink;
-  /* align-items: flex-end; */
+  width: 100%;
+  /* border: 5px solid hotpink; */
   margin: 0 auto;
 }
 
@@ -100,30 +98,31 @@ border: 5px solid hotpink;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: flex-start;
-  align-items: flex-start;
-  align-self: center; */
-  /* column-gap: 6em; */
   width: 100%;
   margin: 0 auto;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
-.work-experience, .education-training, .volunteer-experience, .awards-recognitions {
-  width: 50%;
-      background: white; 
-       border: 1px solid wheat;
-    }
+.work-experience,
+.education-training,
+.volunteer-experience,
+.awards-recognitions {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  /* background: white;  */
+  /* border: 1px solid wheat; */
+}
 
 
 .sub-heading {
-  line-height: 2.5em;
+  line-height: 1.5em;
 }
 
 .place,
 .date,
 .title {
-  line-height: 1em;
+  line-height: 1.7em;
 }
 
 
@@ -142,7 +141,7 @@ border: 5px solid hotpink;
 
 
 
-/* 
+  /* 
   .work-experience {
     order: 1;
   }
@@ -162,5 +161,12 @@ border: 5px solid hotpink;
 
   .resume-details {
     width: 100%;
+  }
+
+  .work-experience,
+  .education-training,
+  .volunteer-experience,
+  .awards-recognitions {
+    width: 50%;
   }
 }

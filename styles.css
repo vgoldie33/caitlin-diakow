@@ -137,28 +137,7 @@ background: white;
 
 /* desktop styles */
 @media (min-width: 1024px) {
-
-
-
-
-  /* 
-  .work-experience {
-    order: 1;
-  }
   
-  .education-training {
-    order: 3;
-  }
-  
-  .volunteer-experience {
-    order: 2;
-  }
-  
-  .awards-recognitions {
-    order: 4;
-  } */
-
-
   .resume-details {
     width: 100%;
   }
